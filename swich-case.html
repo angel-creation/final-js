@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+     document.write("<h1>Swich case</h1>");
+     var a=10;
+     switch(a){
+
+        case 0: document.write(" a is zero.");
+        break;
+        case 10: document.write(" a is one");
+        break;
+        case 2: document.write(" a is second");
+        break;
+        default: document.write("a is gratter dhen 2");
+     }
+
+     document.write("<h2> second exmple</h2>");
+     let age=20;
+     switch(age){
+        case (age >= 15 && age <= 20):
+            document.write("are you alligeble");
+            break;
+        case (age >=21 && age <=30): document.write("not iligeble");
+        break;
+        default: document.write("i is gratterdhen 2.");
+        }
+
+        document.write("<h2> second exmple</h2>");
+        let day=6;
+        switch(day){
+            case 1: document.write("today is monday");
+            break;
+            case 2: document.write("today thusday");
+            break;
+            case 3: document.write("today wensday");
+            break;
+            case 4: document.write("today thusday");
+            break;
+            case 5: document.write("today is friday");
+            break;
+            case 6: document.write("today is sunday");
+            break; 
+            default: document.write("please enter valid number" + "<br>");
+        }
+
+        var day_second=2;
+        switch(day_second){
+            case 1: case 2:  case 3:
+                document.write("today is monday");
+            case 3: document.write("today wensday");
+            break;
+            case 4: document.write("today thusday");
+            break;
+            case 5: document.write("today is friday");
+            break;
+            case 6: document.write("today is sunday");
+            break;
+            default: document.write("<br>"+"please enter valid number");
+        }
+
+        
+    </script>
+    
+</body>
+</html>
