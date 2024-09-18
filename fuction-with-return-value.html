@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        document.write("<h1>Fuction With Return Value<h1>");
+
+            function name(fname, lname){
+               var a=fname + " "+ lname;
+               return a;
+            }
+           var c= name("vishal", "bhatt"+"<br>");
+            document.write(c);
+
+            function sum(math, eng,sc){
+                var s= math + eng + sc;
+                return s;
+            }
+          var total= sum(20,30, 20);
+          document.write(total);
+
+          function perecentage(tt){
+          var per=tt/300 *100;
+          document.write(per)
+          
+          }
+          var totol= perecentage(20,60,20);
+
+
+          function welcome(){
+            return"welcome to our website"
+          }
+          document.write(welcome());
+
+          function myname(fname="prakash", lname="bhatu"){
+            var a= fname +lname;
+            return a;
+          }
+
+          var useername=myname("ramesh", "yadav");
+
+          document.write(useername);
+
+
+    </script>
+    
+</body>
+</html>
