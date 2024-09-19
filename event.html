@@ -4,45 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .style{
+            background-color: crimson;
+            transition: 0.5s all;
+            display: block;
+
+        }
+    </style>
    
 </head>
 <body>
 
     <h1>Event</h1>
-    <h2>On Click</h2>
-    <button onclick="hello()">Click here</button>
-
-    <h2>On Db Click</h2>
-    <button ondblclick="hello()">click here</button>
-
-    <h2>On contextmenu</h2>
-    <button oncontextmenu="hello()">click here</button>
-
-    <h2>On mouse enter</h2>
-    <button onmouseenter="hello()">click here</button>
-
-    <h2>On mouse out</h2>
-    <button onmouseout="hello()">click here</button>
-
-    <h2>on mouse down</h2>
-    <button onmousedown="hello()">click here</button>
-     
-    <h2>Mouse up</h2>
-    <button onmouseup="hello">click here</button>
-
-    <h2>key press</h2>
-    <button onkeypress="hello()">click here</button>
-
-    <h2>key up</h2>
-    <button onkeyup="hello()">click here</button>
+    <h2>Onclick</h2>
+    <button  onclick="hello()">click here</button>
+    <div id="demo" style="width: 100px; height: 100px; border: 1px solid rgb(68, 0, 255); "></div>
 
     
+     <h2>ondbclick</h2>
+    <button  ondblclick="hello_2()">click here</button>
+    <div id="demo_2" style="width: 100px; height: 100px; border: 1px solid rgb(68, 0, 255); "></div>
+
+    <h2>onrightclick</h2>
+    <button  oncontextmenu="hello_3()">click here</button>
+    <div id="demo_3" style="width: 100px; height: 100px; border: 1px solid rgb(68, 0, 255); "></div>
+
+     <h2>on mouse enter</h2>
+     <div class="div-wrapper" style="display: flex; align-items: center; gap: 20px;">
+        <div id="demo_4" onmouseenter="hello_4()" style="width: 100px; height: 100px; border: 1px solid rgb(68, 0, 255); "></div>
+        <div onmouseenter="hello_5()" id="demo_5" style="width: 100px; height: 100px; border: 1px solid rgb(68, 0, 255); "></div>
+     </div>
+     <h2>on mouse out</h2>
+      <div onmouseout="hello_6()" id="demo_6"style="width: 100px; height: 100px; border: 1px solid rgb(68, 0, 255);"></div>
+
+      <h2>on mouse up</h2>
+     <div onmouseup="hello_7" id="demo-7" style="width: 100px; height: 100px; border: 1px solid rgb(68, 0, 255);"></div>
 
 
     <script>
+        //    onclick
         function hello(){
-            document.write("hello every one");
+           var element= document.getElementById("demo");
+           element.classList.toggle("style");
         }
+        //    ondbclick
+       
+        function hello_2(){
+           var element_2= document.getElementById("demo_2");
+           element_2.classList.toggle("style");
+        }
+         //    onrightclick
+        function hello_3(){
+           var element_3 = document.getElementById("demo_3");
+           element_3.classList.toggle("style");
+        }
+
+        //mouse enter
+     
+        function hello_4(){
+         var element_4 =document.getElementById("demo_5");
+         element_4.classList.toggle("style");
+        }
+
+        function hello_5(){
+            var element_5 = document.getElementById("demo_4");
+            element_5.classList.toggle("style");
+        }
+       //mouse out
+      function hello_6(){
+        var element_6 = document.getElementById("demo_6")
+        element_6.classList.toggle("style");
+      }
+
+      // mouse up
+     function hello_7(){
+        var element_7 = document.getElementById("demo-7");
+        element_7.classList("style");
+     }
+
     </script>
 
     
